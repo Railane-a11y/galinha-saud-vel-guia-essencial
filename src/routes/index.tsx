@@ -94,6 +94,11 @@ function Index() {
         </div>
       </section>
 
+      <section className="bg-ivory px-5 py-16 sm:px-8 lg:py-24"><div className="mx-auto max-w-6xl">
+        <SectionHeading eyebrow="Mais valor" title="Você Ainda Leva 3 Bônus Exclusivos" subtitle="Materiais complementares incluídos sem custo adicional." />
+        <div className="mt-10 grid gap-5 md:grid-cols-3">{bonuses.map(({number,icon:Icon,title,text})=><article key={title} className="relative border border-border bg-background p-6 shadow-sm"><span className="absolute right-5 top-4 text-5xl font-extrabold text-gold/15">{number}</span><div className="grid size-12 place-items-center rounded-md bg-forest-deep text-gold-soft"><Icon className="size-6"/></div><span className="mt-8 block text-[10px] font-extrabold uppercase text-gold">Bônus {number}</span><h3 className="mt-2 text-lg font-extrabold">{title}</h3><p className="mt-3 text-sm leading-6 text-muted-foreground">{text}</p><span className="mt-5 inline-flex text-xs font-extrabold uppercase text-primary">Incluído grátis</span></article>)}</div>
+      </div></section>
+
       <section className="bg-forest-deep px-5 py-16 text-primary-foreground sm:px-8 lg:py-24">
         <div className="mx-auto max-w-6xl">
           <SectionHeading light eyebrow="Conteúdo prático" title="Veja o Que Você Vai Aprender" subtitle="Informação organizada para consultar sempre que precisar." />
@@ -107,11 +112,6 @@ function Index() {
       <section className="px-5 py-16 sm:px-8 lg:py-24"><div className="mx-auto max-w-5xl">
         <SectionHeading eyebrow="Feito para você" title="Ideal Para Quem Deseja..." subtitle="Cuidar melhor das aves sem depender de explicações difíceis." />
         <div className="mt-10 grid gap-3 sm:grid-cols-2">{audience.map((item,i)=><div key={item} className="flex items-center gap-4 border border-border bg-card p-4 shadow-sm"><span className="grid size-8 shrink-0 place-items-center rounded-full bg-gold-soft text-xs font-extrabold text-gold">{i+1}</span><span className="text-sm font-semibold">{item}</span></div>)}</div>
-      </div></section>
-
-      <section className="bg-ivory px-5 py-16 sm:px-8 lg:py-24"><div className="mx-auto max-w-6xl">
-        <SectionHeading eyebrow="Mais valor" title="Você Ainda Leva 3 Bônus Exclusivos" subtitle="Materiais complementares incluídos sem custo adicional." />
-        <div className="mt-10 grid gap-5 md:grid-cols-3">{bonuses.map(({number,icon:Icon,title,text})=><article key={title} className="relative border border-border bg-background p-6 shadow-sm"><span className="absolute right-5 top-4 text-5xl font-extrabold text-gold/15">{number}</span><div className="grid size-12 place-items-center rounded-md bg-forest-deep text-gold-soft"><Icon className="size-6"/></div><span className="mt-8 block text-[10px] font-extrabold uppercase text-gold">Bônus {number}</span><h3 className="mt-2 text-lg font-extrabold">{title}</h3><p className="mt-3 text-sm leading-6 text-muted-foreground">{text}</p><span className="mt-5 inline-flex text-xs font-extrabold uppercase text-primary">Incluído grátis</span></article>)}</div>
       </div></section>
 
       <section className="px-5 py-16 sm:px-8 lg:py-24"><div className="mx-auto max-w-6xl">
