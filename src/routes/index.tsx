@@ -16,7 +16,7 @@ import {
   Stethoscope,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/criador-galinha.jpg";
+import mockupImage from "@/assets/guia-mockup.jpg.asset.json";
 import anaImage from "@/assets/depoimento-ana.jpg";
 import joaoImage from "@/assets/depoimento-joao.jpg";
 import mariaImage from "@/assets/depoimento-maria.jpg";
@@ -76,45 +76,25 @@ function Index() {
       </div>
 
       <section id="inicio" className="relative bg-background px-5 pb-16 pt-10 sm:px-8 sm:pb-20 lg:pt-16">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:gap-16">
-          <div className="text-center lg:text-left">
-            <span className="inline-flex items-center gap-2 rounded-full bg-gold-soft px-3 py-1.5 text-[11px] font-extrabold uppercase text-gold sm:text-xs">
-              <Sparkles className="size-3.5" /> Guia digital para pequenos criadores
-            </span>
-            <h1 className="mt-5 text-[2rem] font-extrabold leading-[1.08] text-forest-deep sm:text-5xl lg:text-[3.5rem]">
-              Aprenda a Tratar as Principais Doenças da Sua Galinha <span className="text-gold">Antes de Perder Todas Elas</span>
-            </h1>
-            <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-muted-foreground sm:text-base lg:mx-0">
-              Identifique sintomas e aprenda receitas caseiras fáceis para cuidar da sua criação com mais rapidez, economia e confiança.
-            </p>
-            <Button asChild size="large" className="mt-7 w-full text-sm sm:w-auto sm:px-9 sm:text-base">
-              <a href="#oferta">QUERO O MEU ACESSO AGORA <ArrowRight className="size-5" /></a>
-            </Button>
-            <p className="mt-4 flex items-center justify-center gap-2 text-xs text-muted-foreground lg:justify-start"><LockKeyhole className="size-4 text-primary" /> Compra segura • Pagamento único</p>
-          </div>
-
-          <div className="relative mx-auto w-full max-w-[570px]">
-            <div className="absolute inset-x-8 bottom-2 h-16 rounded-full bg-forest/15 blur-2xl" />
-            <div className="relative aspect-[1.08] rounded-2xl bg-secondary/55 p-5 sm:p-8">
-              <div className="absolute left-[9%] top-[7%] h-[76%] w-[58%] -rotate-3 overflow-hidden rounded-md border-[6px] border-background bg-forest-deep shadow-2xl sm:border-[9px]">
-                <img src={heroImage} alt="Capa do Guia Galinha Saudável" className="h-[48%] w-full object-cover" />
-                <div className="p-4 text-primary-foreground sm:p-6">
-                  <span className="text-[9px] font-bold uppercase text-gold-soft sm:text-xs">Guia completo</span>
-                  <p className="mt-1 text-lg font-extrabold leading-tight sm:text-3xl">Galinha<br/>Saudável</p>
-                  <div className="mt-3 h-1 w-10 bg-gold" />
-                </div>
-              </div>
-              <div className="absolute bottom-[8%] right-[6%] h-[67%] w-[35%] rounded-[1.4rem] border-[7px] border-forest-deep bg-background p-1.5 shadow-2xl sm:border-[10px]">
-                <div className="h-full overflow-hidden rounded-[0.8rem] bg-forest-deep">
-                  <img src={heroImage} alt="Guia aberto no celular" className="h-[45%] w-full object-cover" />
-                  <div className="p-2 text-center text-primary-foreground"><HeartPulse className="mx-auto mt-2 size-7 text-gold"/><p className="mt-2 text-[9px] font-bold leading-tight sm:text-xs">CUIDADOS PRÁTICOS PARA SUAS GALINHAS</p></div>
-                </div>
-              </div>
-              <div className="absolute bottom-[9%] left-[15%] w-[48%] rotate-2 rounded-md border-4 border-background bg-background p-1.5 shadow-xl">
-                <div className="grid grid-cols-3 gap-1">{[1,2,3].map(n=><div key={n} className="aspect-[.8] rounded-sm bg-ivory p-1"><div className="h-1/2 rounded-sm bg-secondary"/><div className="mt-1 h-1 w-full bg-border"/><div className="mt-1 h-1 w-2/3 bg-border"/></div>)}</div>
-              </div>
-            </div>
-          </div>
+        <div className="mx-auto max-w-4xl text-center">
+          <span className="inline-flex items-center gap-2 rounded-full bg-gold-soft px-3 py-1.5 text-[11px] font-extrabold uppercase text-gold sm:text-xs">
+            <Sparkles className="size-3.5" /> Guia digital para pequenos criadores
+          </span>
+          <h1 className="mx-auto mt-5 max-w-3xl break-words text-[2rem] font-extrabold leading-[1.08] text-forest-deep sm:text-5xl lg:text-[3.5rem]">
+            Aprenda a Tratar as Principais Doenças da Sua Galinha <span className="text-gold">Antes de Perder Todas Elas</span>
+          </h1>
+          <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-muted-foreground sm:text-base">
+            Identifique sintomas e aprenda receitas caseiras fáceis para cuidar da sua criação com mais rapidez, economia e confiança.
+          </p>
+          <img
+            src={mockupImage.url}
+            alt="Guia +300 Receitas Caseiras para Doenças de Galinhas em telas de computador, celular e livro"
+            className="mx-auto mt-8 w-full rounded-xl border border-border bg-card shadow-2xl"
+          />
+          <Button asChild size="large" className="mt-8 w-full text-sm sm:w-auto sm:px-9 sm:text-base">
+            <a href="#oferta">QUERO O MEU ACESSO AGORA <ArrowRight className="size-5" /></a>
+          </Button>
+          <p className="mt-4 flex items-center justify-center gap-2 text-xs text-muted-foreground"><LockKeyhole className="size-4 text-primary" /> Compra segura • Pagamento único</p>
         </div>
       </section>
 
