@@ -87,10 +87,7 @@ function Index() {
             alt="Guia +300 Receitas Caseiras para Doenças de Galinhas em telas de computador, celular e livro"
             className="mx-auto mt-8 w-full rounded-xl border border-border bg-card shadow-2xl"
           />
-          <Button asChild size="large" className="mt-8 w-full text-sm sm:w-auto sm:px-9 sm:text-base">
-            <a href="#oferta">QUERO O MEU ACESSO AGORA <ArrowRight className="size-5" /></a>
-          </Button>
-          <p className="mt-4 flex items-center justify-center gap-2 text-xs text-muted-foreground"><LockKeyhole className="size-4 text-primary" /> Compra segura • Pagamento único</p>
+          <p className="mt-8 flex items-center justify-center gap-2 text-xs text-muted-foreground"><LockKeyhole className="size-4 text-primary" /> Compra segura • Pagamento único</p>
         </div>
       </section>
 
