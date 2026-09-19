@@ -123,16 +123,32 @@ function Index() {
         <div className="mt-10 grid gap-5 md:grid-cols-3">{testimonials.map(t=><article key={t.name} className="border border-border bg-card p-6"><div className="flex gap-1 text-gold" aria-label="5 estrelas">{Array.from({length:5}).map((_,i)=><Star key={i} className="size-4 fill-current"/>)}</div><blockquote className="mt-5 min-h-24 text-sm leading-7">“{t.text}”</blockquote><div className="mt-5 flex items-center gap-3"><img src={t.image} alt={t.name} className="size-11 rounded-full object-cover"/><div><strong className="block text-sm">{t.name}</strong><span className="text-xs text-muted-foreground">{t.role}</span></div></div></article>)}</div>
       </div></section>
 
-      <section id="oferta" className="bg-forest-deep px-5 py-16 text-primary-foreground sm:px-8 lg:py-24"><div className="mx-auto max-w-lg text-center">
+      <section id="oferta" className="bg-forest-deep px-5 py-16 text-primary-foreground sm:px-8 lg:py-24"><div className="mx-auto max-w-4xl text-center">
         <span className="inline-flex rounded-full bg-gold px-4 py-1.5 text-[10px] font-extrabold uppercase text-forest-deep">Oferta especial</span>
         <h2 className="mt-5 text-3xl font-extrabold sm:text-4xl">Comece a Proteger Sua Criação Hoje</h2>
-        <div className="mt-8 border border-primary-foreground/15 bg-primary-foreground/5 p-6 sm:p-8">
-          <p className="text-sm text-primary-foreground/60">De <span className="line-through">R$ 47,00</span> por apenas</p>
-          <div className="mt-2 flex items-end justify-center gap-1"><span className="pb-2 text-xl font-bold">R$</span><strong className="text-6xl font-extrabold text-gold-soft">19</strong><span className="pb-2 text-2xl font-extrabold text-gold-soft">,90</span></div>
-          <p className="mt-2 text-xs text-primary-foreground/60">Pagamento único • Acesso imediato</p>
-          <ul className="mx-auto mt-7 max-w-xs space-y-3 text-left text-sm">{["Guia principal completo","3 bônus exclusivos","Acesso no celular e computador","Atualizações futuras"].map(x=><li key={x} className="flex gap-2"><Check className="size-5 shrink-0 text-leaf"/>{x}</li>)}</ul>
-          <Button asChild size="large" className="mt-8 w-full text-sm sm:text-base"><a href="#comprar">QUERO RECEBER O GUIA <ArrowRight className="size-5"/></a></Button>
-          <p className="mt-4 flex items-center justify-center gap-2 text-xs text-primary-foreground/60"><LockKeyhole className="size-4"/> Ambiente de compra seguro</p>
+        <p className="mx-auto mt-3 max-w-xl text-sm text-primary-foreground/60">Escolha o plano ideal para você — pagamento único e acesso imediato nos dois.</p>
+        <div className="mt-10 grid items-stretch gap-5 text-left md:grid-cols-2">
+          <div className="flex flex-col border border-primary-foreground/15 bg-primary-foreground/5 p-6 sm:p-8">
+            <span className="text-[10px] font-extrabold uppercase tracking-wide text-primary-foreground/60">Entrada</span>
+            <p className="mt-1 text-lg font-extrabold">Guia Essencial</p>
+            <p className="mt-4 text-sm text-primary-foreground/60">De <span className="line-through">R$ 27,00</span> por apenas</p>
+            <div className="mt-1 flex items-end gap-1"><span className="pb-2 text-lg font-bold">R$</span><strong className="text-5xl font-extrabold text-gold-soft">9</strong><span className="pb-2 text-xl font-extrabold text-gold-soft">,90</span></div>
+            <p className="mt-2 text-xs text-primary-foreground/60">Pagamento único • Acesso imediato</p>
+            <ul className="mt-7 space-y-3 text-sm">{["Guia principal completo","Receitas caseiras passo a passo","Acesso no celular e computador"].map(x=><li key={x} className="flex gap-2"><Check className="size-5 shrink-0 text-leaf"/>{x}</li>)}</ul>
+            <Button asChild size="large" variant="outline" className="mt-8 w-full border-gold text-sm text-gold hover:bg-gold hover:text-forest-deep sm:text-base"><a href="#comprar">QUERO O GUIA ESSENCIAL <ArrowRight className="size-5"/></a></Button>
+            <p className="mt-4 flex items-center justify-center gap-2 text-xs text-primary-foreground/60"><LockKeyhole className="size-4"/> Ambiente de compra seguro</p>
+          </div>
+          <div className="relative flex flex-col border-2 border-gold bg-primary-foreground/10 p-6 shadow-cta sm:p-8">
+            <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-gold px-4 py-1.5 text-[10px] font-extrabold uppercase text-forest-deep">Mais escolhido</span>
+            <span className="text-[10px] font-extrabold uppercase tracking-wide text-gold">Completo</span>
+            <p className="mt-1 text-lg font-extrabold">Guia + Bônus Exclusivos</p>
+            <p className="mt-4 text-sm text-primary-foreground/60">De <span className="line-through">R$ 47,00</span> por apenas</p>
+            <div className="mt-1 flex items-end gap-1"><span className="pb-2 text-lg font-bold">R$</span><strong className="text-5xl font-extrabold text-gold-soft">19</strong><span className="pb-2 text-xl font-extrabold text-gold-soft">,90</span></div>
+            <p className="mt-2 text-xs text-primary-foreground/60">Pagamento único • Acesso imediato</p>
+            <ul className="mt-7 space-y-3 text-sm">{["Tudo do Guia Essencial","3 bônus exclusivos","Calendário e checklist semanal","Atualizações futuras"].map(x=><li key={x} className="flex gap-2"><Check className="size-5 shrink-0 text-leaf"/>{x}</li>)}</ul>
+            <Button asChild size="large" className="mt-8 w-full text-sm sm:text-base"><a href="#comprar">QUERO RECEBER O GUIA <ArrowRight className="size-5"/></a></Button>
+            <p className="mt-4 flex items-center justify-center gap-2 text-xs text-primary-foreground/60"><LockKeyhole className="size-4"/> Ambiente de compra seguro</p>
+          </div>
         </div>
       </div></section>
 
