@@ -59,14 +59,14 @@ function Index() {
         <img src={heroImage} alt="Criador segurando uma galinha saudável em sua propriedade rural" width={1600} height={1072} className="absolute inset-0 h-full w-full object-cover object-[64%_center]" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--forest-deep)_0%,color-mix(in_oklab,var(--forest-deep)_92%,transparent)_42%,color-mix(in_oklab,var(--forest-deep)_28%,transparent)_75%,transparent_100%)]" />
         <div className="relative mx-auto flex min-h-[760px] max-w-7xl items-center px-5 pb-16 pt-28 sm:min-h-[720px] sm:px-8 lg:px-12">
-          <div className="max-w-2xl text-primary-foreground">
+          <div className="min-w-0 max-w-2xl text-primary-foreground">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gold/50 bg-forest-deep/70 px-4 py-2 text-xs font-semibold uppercase text-gold-soft backdrop-blur-sm"><Sparkles className="size-4 text-gold" /> Guia prático para pequenos criadores</div>
-            <h1 className="text-3xl font-extrabold leading-[1.15] sm:text-5xl lg:text-[3.5rem]">Suas Galinhas Estão Doentes? Aprenda Receitas Caseiras Simples Antes Que Você Perca Todo o Seu Plantel.</h1>
+            <h1 className="break-words text-[1.75rem] font-extrabold leading-[1.16] sm:text-5xl lg:text-[3.5rem]">Suas Galinhas Estão Doentes? Aprenda Receitas Caseiras Simples Antes Que Você Perca Todo o Seu Plantel.</h1>
             <p className="mt-5 max-w-xl text-sm leading-7 text-primary-foreground/85 sm:text-lg">Descubra cuidados usados por pequenos criadores para identificar sintomas rapidamente e agir com receitas práticas, econômicas e fáceis de preparar.</p>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">
               {benefits.map((item) => <li key={item} className="flex items-start gap-2 text-sm font-medium"><span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-leaf text-forest-deep"><Check className="size-3.5" strokeWidth={3}/></span>{item}</li>)}
             </ul>
-            <Button asChild size="large" className="mt-8 w-full sm:w-auto"><a href="#oferta">QUERO PROTEGER MINHAS GALINHAS AGORA <ArrowRight className="size-5" /></a></Button>
+            <Button asChild size="large" className="mt-8 w-full px-4 text-xs sm:w-auto sm:px-9 sm:text-base"><a href="#oferta">QUERO PROTEGER MINHAS GALINHAS AGORA <ArrowRight className="size-5 shrink-0" /></a></Button>
             <p className="mt-3 flex items-center gap-2 text-xs text-primary-foreground/70"><LockKeyhole className="size-3.5"/> Compra segura • Acesso imediato</p>
           </div>
         </div>
