@@ -77,9 +77,6 @@ function Index() {
 
       <section id="inicio" className="relative bg-background px-5 pb-16 pt-10 sm:px-8 sm:pb-20 lg:pt-16">
         <div className="mx-auto max-w-4xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full bg-gold-soft px-3 py-1.5 text-[11px] font-extrabold uppercase text-gold sm:text-xs">
-            <Sparkles className="size-3.5" /> Guia digital para pequenos criadores
-          </span>
           <h1 className="mx-auto mt-5 max-w-3xl break-words text-[2rem] font-extrabold leading-[1.08] text-forest-deep sm:text-5xl lg:text-[3.5rem]">
             Aprenda a Tratar as Principais Doenças da Sua Galinha <span className="text-gold">Antes de Perder Todas Elas</span>
           </h1>
