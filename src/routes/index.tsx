@@ -11,7 +11,6 @@ import {
   LockKeyhole,
   MonitorSmartphone,
   ShieldCheck,
-  Sparkles,
   Star,
   Stethoscope,
 } from "lucide-react";
